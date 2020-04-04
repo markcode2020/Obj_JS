@@ -1,2 +1,2 @@
-# Obj_JS
-some JS code example
+# Library Assignment
+some JS/HTML/CSS code example
