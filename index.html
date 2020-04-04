@@ -3,7 +3,7 @@
 <meta charset="utf-8"/>
 <head>
     <title>This is Library Project</title>
-
+    <link rel="stylesheet" href="style/page.css">
     <script src="scripts/libpro.js"></script>
 </head>
 
@@ -19,15 +19,14 @@
 <input type="text" id="author" name="author"><br><br>
 <label for="author">Pages:</label>
 <input type="text" id="pages" name="pages"><br><br>
-<input type="radio" id="read" name="read" value="read">
+<input type="radio" id="read" name ="read">
 <label for="read">Read</label><br><br>
-<input type="radio" id="not_read" name="read" value="not yet read">
-<label for="female">Not Yet Read</label><br><br>
-<button class = "button" type="button" onclick="addBookToLibrary()">submit</button>
-
+<input type="radio" id="not_read" name ="read">
+<label for="not_read">Not Yet Read</label><br><br>
+<button class = "button" type="button" onclick="addBookToLibrary()">Add Book</button>
 </form>
-<div id ='book'> Book</div>
-<div id ='lib'>Lib</div>
+<div id ='book'></div>
+<div id ='lib_table'></div>
 
 
 

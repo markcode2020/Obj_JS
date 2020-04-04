@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(215, 240, 209);
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+}
+
+table {
+    font-family: verdana;
+    font-size: 12px;
+    text-align: center;
+}
+
+button {
+                background-color: rgb(182, 182, 182);
+                border: none;
+                color: white;
+                padding: 5px 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 11px;
+                cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(43, 23, 228);
+}
