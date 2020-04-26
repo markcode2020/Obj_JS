@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8"/>
+
 <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>This is Library Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/'-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/page.css">
-    <script src="scripts/libpro.js"></script>
+
 </head>
 
 <body>
 
 <h2>Library One</h2>
 <p id =  "demo">This library is constructed by some html, css and javascript codes.</p>
+<div>
+  <form>
+  <label for="title">Title:</label>
+  <input type="text" id="title" name="title"><br><br>
+  <label for="author">Author:</label>
+  <input type="text" id="author" name="author"><br><br>
+  <label for="author">Pages:</label>
+  <input type="text" id="pages" name="pages"><br><br>
+  <input type="radio" id="read" name ="read">
+  <label for="read">Read</label><br><br>
+  <input type="radio" id="not_read" name ="read">
+  <label for="not_read">Not Yet Read</label><br><br>
+  <div class = 'dropDown'>
+    <div class = 'title pointerCursor'>Select a language <i class="fa fa-angle-right"></i></div>
+    <div class = 'language pointerCursor hide'>
+        <div class ='option' id = 'English'>English</div>
+        <div class ='option' id = 'Chinese'>Chinese</div>
+        <div class ='option' id = 'Spanish'>Spanish</div>
+        <div class ='option' id = 'French'>French</div>
+    </div>
+  </div><br><br>
+  <button class = "button" type="button" onclick="addBookToLibrary()">Add Book</button>
+  </form>
 
-<form>
-<label for="title">Title:</label>
-<input type="text" id="title" name="title"><br><br>
-<label for="author">Author:</label>
-<input type="text" id="author" name="author"><br><br>
-<label for="author">Pages:</label>
-<input type="text" id="pages" name="pages"><br><br>
-<input type="radio" id="read" name ="read">
-<label for="read">Read</label><br><br>
-<input type="radio" id="not_read" name ="read">
-<label for="not_read">Not Yet Read</label><br><br>
-<button class = "button" type="button" onclick="addBookToLibrary()">Add Book</button>
-</form>
+</div>
+
 <div id ='book'></div>
 <div id ='lib_table'></div>
 
 
-
-
+<script src="scripts/libpro.js"></script>
 </body>
 </html>
